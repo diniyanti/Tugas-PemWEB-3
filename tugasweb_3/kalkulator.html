@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script language="JavaScript">
+	function tambah(){
+		var val1=document.kirim.T1.value
+		var val2=document.kirim.T2.value
+		document.kirim.T3.value=(val1/1+val2/1)
+	}
+	function kurang(){
+		var val1=document.kirim.T1.value
+		var val2=document.kirim.T2.value
+		document.kirim.T3.value=(val1-val2)
+	}
+	function kali(){
+		var val1=document.kirim.T1.value
+		var val2=document.kirim.T2.value
+		document.kirim.T3.value=(val1*val2)
+	}
+	function bagi(){
+		var val1=document.kirim.T1.value
+		var val2=document.kirim.T2.value
+		document.kirim.T3.value=(val1/val2)
+	}
+</script> 
+<body>
+	<form method="POST" name="kirim">
+		<p>
+			Bilagan 1 <input type="text" name="T1" size="20"><br>
+			Bilagan 2 <input type="text" name="T2" size="20"><br>
+			Hasil <input type="text" name="T3" size="20"><br>
+		</p>
+		<p>
+			<input type="button" value="+" name="b1" onclick=tambah()>
+			<input type="button" value="-" name="b2" onclick=kurang()>
+			<input type="button" value="x" name="b3" onclick=kali()>
+			<input type="button" value=":" name="b2" onclick=bagi()>
+		</p>
+	</form>
+</body>
+</html>
